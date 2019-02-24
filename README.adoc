@@ -1,1 +1,35 @@
 # cna-lab
+
+==== Step 1: Test and Deploy Freelancer service
+
+Test cases for this service are located here src/test/java/com/example/freelancer/
+----
+$ cd freelancer
+$ mvn clean package 
+----
+
+Deploy the code in Openshift
+
+----
+# create postgres database
+$ oc new-app --template=postgresql-persistent \
+			-e POSTGRESQL_USER=user1 \
+			-e POSTGRESQL_PASSWORD=welcome1
+
+# create secret containing credentials information
+$ oc create secret generic postgre-conn-details \
+    --from-literal=POSTGRES_USER=user1 \
+    --from-literal=POSTGRES_PASSWORD=welcome1
+
+# deploy freelancer application in Openshift (we use fabric8 to deploy, see the respective 
+# yamls file in src/main/fabric8 folder
+$ mvn fabric8:deploy -DskipTests
+
+# bind the secret with the deploy
+$ oc set env --from=secret/postgre-conn-details dc/freelancer
+
+# Access application, first get the route 
+$ oc get routes
+$ curl freelancer-cna-lab.192.168.99.100.nip.io/freelancers
+$ curl freelancer-cna-lab.192.168.99.100.nip.io/freelancers/1
+----
