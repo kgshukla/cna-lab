@@ -2,7 +2,11 @@
 
 ==== Step 1: Test and Deploy Freelancer service
 
-Freelancer service is written in SpringBoot
+Freelancer service is written in SpringBoot. It has a controller file which defines all endpoints, has a service class that massages data once returned by repository interface. Repository interace declares a table in postgres that is based on entity object defined in model class. 
+
+Test cases run locally and uses H2 in-memory embedded data for testing. 
+
+Also, defined openshift objects in fabric8 directory. Fabricate makes it easy to deploy an app into Openshift.
 
 Main controller file src/main/java/com/example/freelancer/controller folder
 
@@ -53,7 +57,7 @@ $ curl freelancer-cna-lab.192.168.99.100.nip.io/freelancers/1
 
 ==== Step 2: Test and Deploy Gateway Service
 
-Gateway service is written in Thorntail. 
+Gateway service is written in Thorntail. Main Rest file (which defines endpoints) are defined in rest package. An interface is defined in service package that models the api calls to be executed with the base url pointing to Freelancer application in Openshift. Model data (retrieved by api call to freelancer app) is defined in model package.
 
 Main Rest files in src/main/java/com/example/gateway/rest/ folder
 
