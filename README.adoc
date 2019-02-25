@@ -2,7 +2,16 @@
 
 ==== Step 1: Test and Deploy Freelancer service
 
-Test cases for this service are located here src/test/java/com/example/freelancer/
+Freelancer service is written in SpringBoot
+Main controller file src/main/java/com/example/freelancer/controller folder
+Service file src/main/java/com/example/freelancer/service folder
+Repository (JPA) file src/main/java/com/example/freelancer/repository folder
+Model file src/main/java/com/example/freelancer/model folder 
+Test cases src/test/java/com/example/freelancer/ folder
+Sample data to be uploaded in postgres when starting up the application src/main/resources/import.sql file
+
+To test application locally, run
+
 ----
 $ cd freelancer
 $ mvn clean package 
@@ -32,4 +41,40 @@ $ oc set env --from=secret/postgre-conn-details dc/freelancer
 $ oc get routes
 $ curl freelancer-cna-lab.192.168.99.100.nip.io/freelancers
 $ curl freelancer-cna-lab.192.168.99.100.nip.io/freelancers/1
+----
+
+==== Step 2: Test and Deploy Gateway Service
+
+Gateway service is written in Thorntail. 
+Main Rest files in src/main/java/com/example/gateway/rest/ folder
+Model files in src/main/java/com/example/gateway/model folder
+Service files in src/main/java/com/example/gateway/service folder
+
+Openshift objects in src/main/fabric8 folder
+Test cases in src/test/java/com/exampple/gateway/ folder
+
+Deploy code in Openshift
+
+----
+# Import openjdk image if not available in Openshift
+$ oc import-image registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift:latest --confirm
+
+# Build a new build config
+$ oc new-build --name gateway -i openjdk18-openshift:latest --binary=true
+
+# compile the package
+$ cd gateway
+$ mvn package -DskipTests
+
+# Create a new imagestream via running a build
+$ oc start-build gateway --from-file=target/demo-thorntail.jar
+
+# Deploy gateway application
+# we have defined a configmap which holds the url of the freelancers application. check out all object in 
+# src/main/fabric8 folder
+$ mvn fabric8:build fabric8:deploy -DskipTests
+
+# access your application
+$ curl gateway-cna-lab.192.168.99.100.nip.io/gateway/freelancers
+$ curl gateway-cna-lab.192.168.99.100.nip.io/gateway/freelancers/1
 ----

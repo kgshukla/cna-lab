@@ -1,0 +1,145 @@
+Thu Feb 21 11:59:35 +08 2019 Starting preinstall_script
+Thu Feb 21 11:59:35 +08 2019 \033[0;34m=== Microsoft Office 2011 for Mac Removal Tool 1.5 ===\033[0m
+Thu Feb 21 11:59:35 +08 2019 In function 'LogDevice'
+Software:
+
+    System Software Overview:
+
+      System Version: macOS 10.14.3 (18D109)
+      Kernel Version: Darwin 18.2.0
+      Time since boot: 1 day 1:21
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Pro
+      Model Identifier: MacBookPro14,1
+      Processor Name: Intel Core i5
+      Processor Speed: 2.3 GHz
+      Number of Processors: 1
+      Total Number of Cores: 2
+      L2 Cache (per Core): 256 KB
+      L3 Cache: 4 MB
+      Memory: 16 GB
+      Boot ROM Version: 184.0.0.0.0
+      SMC Version (system): 2.43f6
+
+Thu Feb 21 11:59:35 +08 2019 Force mode set to TRUE
+Thu Feb 21 11:59:35 +08 2019 In function 'MainLoop'
+Thu Feb 21 11:59:35 +08 2019 In function 'GetDestructivePerm'
+Thu Feb 21 11:59:35 +08 2019 In function 'GetDestructiveDataPerm'
+Thu Feb 21 11:59:35 +08 2019 In function 'GetDestructiveLicensePerm'
+Thu Feb 21 11:59:35 +08 2019 In function 'GetSudo'
+Thu Feb 21 11:59:35 +08 2019 In function 'CheckRunning2011'
+Thu Feb 21 11:59:35 +08 2019 In function 'CheckRunning' with argument /Applications/Microsoft Office 2011/Microsoft Word.app
+Thu Feb 21 11:59:35 +08 2019 In function 'CheckRunning' with argument /Applications/Microsoft Office 2011/Microsoft Excel.app
+Thu Feb 21 11:59:35 +08 2019 In function 'CheckRunning' with argument /Applications/Microsoft Office 2011/Microsoft PowerPoint.app
+Thu Feb 21 11:59:36 +08 2019 In function 'CheckRunning' with argument /Applications/Microsoft Office 2011/Microsoft Outlook.app
+Thu Feb 21 11:59:36 +08 2019 In function 'CheckRunning' with argument /Applications/Microsoft Lync.app
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveComponent with arguments /Applications/Microsoft Office 2011 and Office 2011 Applications'
+Thu Feb 21 11:59:36 +08 2019 /Applications/Microsoft Office 2011 was not detected
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveComponent with arguments /Applications/Microsoft Lync.app and Lync'
+Thu Feb 21 11:59:36 +08 2019 /Applications/Microsoft Lync.app was not detected
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveComponent with arguments /Library/LaunchDaemons/com.microsoft.office.licensing.helper.plist and Launch Daemon: Licensing Helper'
+Thu Feb 21 11:59:36 +08 2019 /Library/LaunchDaemons/com.microsoft.office.licensing.helper.plist was not detected
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveComponent with arguments /Library/PrivilegedHelperTools/com.microsoft.office.licensing.helper and Helper Tools: Licensing Helper'
+Thu Feb 21 11:59:36 +08 2019 /Library/PrivilegedHelperTools/com.microsoft.office.licensing.helper was not detected
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveComponent with arguments /Library/Fonts/Microsoft and Office Fonts'
+Thu Feb 21 11:59:36 +08 2019 /Library/Fonts/Microsoft was not detected
+Thu Feb 21 11:59:36 +08 2019 SAVE_LICENSE is false - removing license file
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveComponent with arguments /Library/Preferences/com.microsoft.office.licensing.plist and Product License'
+Thu Feb 21 11:59:36 +08 2019 /Library/Preferences/com.microsoft.office.licensing.plist was not detected
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveComponent with arguments /Library/Application Support/Microsoft/MERP2.0 and Error Reporting'
+Thu Feb 21 11:59:36 +08 2019 /Library/Application Support/Microsoft/MERP2.0 was not detected
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveUserComponent with arguments Library/Application Support/Microsoft/Office and Application Support'
+rm: /Users/.localized/Library/Application: Not a directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveUserComponent with arguments Library/Caches/com.microsoft.browserfont.cache and Browser Font Cache'
+rm: /Users/.localized/Library/Caches/com.microsoft.browserfont.cache: Not a directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveUserComponent with arguments Library/Caches/com.microsoft.office.setupassistant and Setup Assistant Cache'
+rm: /Users/.localized/Library/Caches/com.microsoft.office.setupassistant: Not a directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveUserComponent with arguments Library/Caches/Microsoft/Office and Office Cache'
+rm: /Users/.localized/Library/Caches/Microsoft/Office: Not a directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveUserComponent with arguments Library/Caches/Outlook and Outlook Identity Cache'
+rm: /Users/.localized/Library/Caches/Outlook: Not a directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemoveUserComponent with arguments Library/Caches/com.microsoft.Outlook and Outlook Cache'
+rm: /Users/.localized/Library/Caches/com.microsoft.Outlook: Not a directory
+Thu Feb 21 11:59:36 +08 2019 In function 'Remove2011Preferences'
+Thu Feb 21 11:59:36 +08 2019 In function 'RemovePref' with argument /Library/Preferences/com.microsoft.Word.plist
+ls: /Library/Preferences/com.microsoft.Word.plist: No such file or directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemovePref' with argument /Library/Preferences/com.microsoft.Excel.plist
+ls: /Library/Preferences/com.microsoft.Excel.plist: No such file or directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemovePref' with argument /Library/Preferences/com.microsoft.Powerpoint.plist
+ls: /Library/Preferences/com.microsoft.Powerpoint.plist: No such file or directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemovePref' with argument /Library/Preferences/com.microsoft.Outlook.plist
+ls: /Library/Preferences/com.microsoft.Outlook.plist: No such file or directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemovePref' with argument /Library/Preferences/com.microsoft.outlook.databasedaemon.plist
+ls: /Library/Preferences/com.microsoft.outlook.databasedaemon.plist: No such file or directory
+Thu Feb 21 11:59:36 +08 2019 In function 'RemovePref' with argument /Library/Preferences/com.microsoft.DocumentConnection.plist
+ls: /Library/Preferences/com.microsoft.DocumentConnection.plist: No such file or directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemovePref' with argument /Library/Preferences/com.microsoft.office.setupassistant.plist
+ls: /Library/Preferences/com.microsoft.office.setupassistant.plist: No such file or directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.Word.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.Word.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.Excel.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.Excel.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.Powerpoint.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.Powerpoint.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.Lync.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.Lync.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.Outlook.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.Outlook.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.outlook.databasedaemon.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.outlook.databasedaemon.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.outlook.office_reminders.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.outlook.office_reminders.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.DocumentConnection.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.DocumentConnection.plist: Not a directory
+Thu Feb 21 11:59:37 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.office.setupassistant.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.office.setupassistant.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.office.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.office.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/com.microsoft.error_reporting.plist
+rm: /Users/.localized/Library/Preferences/com.microsoft.error_reporting.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.Word.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.Word.*.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.Excel.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.Excel.*.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.Powerpoint.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.Powerpoint.*.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.Outlook.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.Outlook.*.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.outlook.databasedaemon.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.outlook.databasedaemon.*.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.DocumentConnection.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.DocumentConnection.*.plist: Not a directory
+Thu Feb 21 11:59:38 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.office.setupassistant.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.office.setupassistant.*.plist: Not a directory
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.registrationDB.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.registrationDB.*.plist: Not a directory
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.e0Q*.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.e0Q*.*.plist: Not a directory
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/com.microsoft.Office365.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/com.microsoft.Office365.*.plist: Not a directory
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveUserPref' with argument Library/Preferences/ByHost/MicrosoftLyncRegistrationDB.*.plist
+rm: /Users/.localized/Library/Preferences/ByHost/MicrosoftLyncRegistrationDB.*.plist: Not a directory
+Thu Feb 21 11:59:39 +08 2019 In function 'remove_PreserveComponent with arguments Documents/Microsoft User Data/Office 2011 Identities and Outlook Identities and Databases'
+Thu Feb 21 11:59:39 +08 2019 In function 'remove_PreserveComponent with arguments Documents/Microsoft User Data/Saved Attachments and Outlook Saved Attachments'
+Thu Feb 21 11:59:39 +08 2019 In function 'remove_PreserveComponent with arguments Documents/Microsoft User Data/Outlook Sound Sets and Outlook Sound Sets'
+Thu Feb 21 11:59:39 +08 2019 In function 'Remove2011Receipts'
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveReceipt' with argument com.microsoft.office.all.*
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveReceipt' with argument com.microsoft.office.en.*
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveReceipt' with argument com.microsoft.merp.*
+Thu Feb 21 11:59:39 +08 2019 In function 'RemoveReceipt' with argument com.microsoft.mau.*
+Thu Feb 21 11:59:39 +08 2019 In function 'CleanDock'
+Thu Feb 21 11:59:39 +08 2019 Found DockUtil tool
+item file:///Applications/Microsoft%20Office%202011/Microsoft%20Document%20Connection.app/ was not found in /Users/kashukla/Library/Preferences/com.apple.dock.plist
+item file:///Applications/Microsoft%20Office%202011/Microsoft%20Word.app/ was not found in /Users/kashukla/Library/Preferences/com.apple.dock.plist
+item file:///Applications/Microsoft%20Office%202011/Microsoft%20Excel.app/ was not found in /Users/kashukla/Library/Preferences/com.apple.dock.plist
+item file:///Applications/Microsoft%20Office%202011/Microsoft%20PowerPoint.app/ was not found in /Users/kashukla/Library/Preferences/com.apple.dock.plist
+item file:///Applications/Microsoft%20Office%202011/Microsoft%20Lync.app/ was not found in /Users/kashukla/Library/Preferences/com.apple.dock.plist
+item file:///Applications/Microsoft%20Office%202011/Microsoft%20Outlook.app/ was not found in /Users/kashukla/Library/Preferences/com.apple.dock.plist
+Thu Feb 21 11:59:40 +08 2019 Completed dock clean-up
+Thu Feb 21 11:59:40 +08 2019 In function 'RelaunchCFPrefs'
+Thu Feb 21 11:59:40 +08 2019 Successfully terminated all preferences daemons
+Thu Feb 21 11:59:40 +08 2019 Exiting script
