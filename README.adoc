@@ -3,12 +3,20 @@
 ==== Step 1: Test and Deploy Freelancer service
 
 Freelancer service is written in SpringBoot
+
 Main controller file src/main/java/com/example/freelancer/controller folder
+
 Service file src/main/java/com/example/freelancer/service folder
+
 Repository (JPA) file src/main/java/com/example/freelancer/repository folder
+
 Model file src/main/java/com/example/freelancer/model folder 
+
 Test cases src/test/java/com/example/freelancer/ folder
+
 Sample data to be uploaded in postgres when starting up the application src/main/resources/import.sql file
+
+Openshift objects in src/main/fabric8 folder
 
 To test application locally, run
 
@@ -46,11 +54,15 @@ $ curl freelancer-cna-lab.192.168.99.100.nip.io/freelancers/1
 ==== Step 2: Test and Deploy Gateway Service
 
 Gateway service is written in Thorntail. 
+
 Main Rest files in src/main/java/com/example/gateway/rest/ folder
+
 Model files in src/main/java/com/example/gateway/model folder
+
 Service files in src/main/java/com/example/gateway/service folder
 
 Openshift objects in src/main/fabric8 folder
+
 Test cases in src/test/java/com/exampple/gateway/ folder
 
 Deploy code in Openshift
